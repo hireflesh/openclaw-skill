@@ -1,0 +1,23 @@
+{
+  "name": "hireflesh",
+  "version": "1.0.0",
+  "description": "Hire human workers from the HireFlesh marketplace directly inside your OpenClaw agent.",
+  "author": "A.I. Robotika Kft.",
+  "homepage": "https://hireflesh.com",
+  "repository": "https://github.com/hireflesh/openclaw-skill",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "human-workers",
+    "tasks",
+    "automation",
+    "payments",
+    "mcp"
+  ],
+  "skill": "SKILL.md",
+  "install": "install.sh",
+  "requires": {
+    "env": ["HIREFLESH_API_KEY"],
+    "bins": ["mcporter", "node"]
+  }
+}
