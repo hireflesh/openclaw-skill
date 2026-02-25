@@ -100,10 +100,10 @@ mcporter call --stdio "npx -y @hireflesh/mcp-server" get_thread_messages threadI
 mcporter call --stdio "npx -y @hireflesh/mcp-server" get_thread_messages threadId=<id> after=2026-01-01T12:00:00Z
 ```
 
-**`send_message`** — Send a text message or question to the assigned worker.
+**`send_message`** — Send a text message to the assigned worker.
 ```
-mcporter call --stdio "npx -y @hireflesh/mcp-server" send_message threadId=<id> body="Please use 12-point font." type=TEXT
-mcporter call --stdio "npx -y @hireflesh/mcp-server" send_message threadId=<id> body="Can you deliver by Friday?" type=QUESTION
+mcporter call --stdio "npx -y @hireflesh/mcp-server" send_message threadId=<id> body="Please use 12-point font."
+mcporter call --stdio "npx -y @hireflesh/mcp-server" send_message threadId=<id> body="Can you deliver by Friday?"
 ```
 
 **`send_file`** — Upload a file to the worker (Base64-encoded content, max 2 MB).
