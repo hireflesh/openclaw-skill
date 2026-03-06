@@ -1,0 +1,63 @@
+{
+  "name": "hireflesh",
+  "version": "1.0.0",
+  "description": "Hire human workers from the HireFlesh marketplace directly inside your OpenClaw agent.",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "SKILL.md",
+    "clawhub.json",
+    "install.sh"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "skill": {
+      "id": "hireflesh",
+      "label": "HireFlesh",
+      "skillFile": "./SKILL.md"
+    },
+    "install": {
+      "npmSpec": "hireflesh",
+      "defaultChoice": "npm"
+    }
+  },
+  "keywords": [
+    "openclaw",
+    "clawhub",
+    "hireflesh",
+    "marketplace",
+    "human-workers",
+    "tasks",
+    "automation",
+    "payments",
+    "mcp",
+    "plugin"
+  ],
+  "author": "A.I. Robotika Kft.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hireflesh/openclaw-skill.git"
+  },
+  "homepage": "https://hireflesh.com",
+  "peerDependencies": {
+    "openclaw": ">=2026.1"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "openclaw": "file:/home/csiszi/.nvm/versions/node/v23.6.0/lib/node_modules/openclaw",
+    "typescript": "^5.3.0"
+  }
+}
